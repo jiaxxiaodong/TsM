@@ -49,17 +49,44 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BaseCell" forIndexPath:indexPath];
-    NewsModel *model = self.dataArr[indexPath.row];
     
-//    cell.textLabel.text = model.title;
+    NewsModel *model = self.dataArr[indexPath.row];
+    //判断是否为大图
+    NSString *Identifier;
+    if (model.imgType) {
+        Identifier = @"bigCell";
+    }else if (model.imgextra.count == 2)
+    {
+       Identifier = @"ImagesCell";
+    }
+    else
+    {
+        Identifier = @"BaseCell";
+    }
+    
+    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier forIndexPath:indexPath];
+ 
+    
+
     cell.model = model;
     
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    NewsModel *model = self.dataArr[indexPath.row];
+    
+    if (model.imgType) {
+        return 180;
+    }else if (model.imgextra.count == 2)
+    {
+        return 150;
+    }
+    else
+    {
+        return 80;
+    }
+  
 }
 
 @end

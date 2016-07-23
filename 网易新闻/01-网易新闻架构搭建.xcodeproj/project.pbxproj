@@ -24,6 +24,9 @@
 		18144ABE1D3DDA2700CC8B73 /* NetworlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18144ABD1D3DDA2700CC8B73 /* NetworlTool.m */; };
 		18144AC01D3E016700CC8B73 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18144ABF1D3E016700CC8B73 /* News.storyboard */; };
 		18144AC31D3E0FAC00CC8B73 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18144AC21D3E0FAC00CC8B73 /* NewsTableViewCell.m */; };
+		1880A7FE1D405C8A0042C09C /* CycleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880A7FD1D405C8A0042C09C /* CycleCollectionViewController.m */; };
+		1880A8011D405DC20042C09C /* CycleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880A8001D405DC20042C09C /* CycleModel.m */; };
+		1880A8041D4068E40042C09C /* CycleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1880A8031D4068E40042C09C /* CycleCollectionViewCell.m */; };
 		A562DAF1DBD456449E0ABF40 /* libPods-01-网易新闻架构搭建.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E391587F8961B6B8EC3D562 /* libPods-01-网易新闻架构搭建.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,12 @@
 		18144ABF1D3E016700CC8B73 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		18144AC11D3E0FAC00CC8B73 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		18144AC21D3E0FAC00CC8B73 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		1880A7FC1D405C8A0042C09C /* CycleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleCollectionViewController.h; sourceTree = "<group>"; };
+		1880A7FD1D405C8A0042C09C /* CycleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleCollectionViewController.m; sourceTree = "<group>"; };
+		1880A7FF1D405DC20042C09C /* CycleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleModel.h; sourceTree = "<group>"; };
+		1880A8001D405DC20042C09C /* CycleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleModel.m; sourceTree = "<group>"; };
+		1880A8021D4068E40042C09C /* CycleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleCollectionViewCell.h; sourceTree = "<group>"; };
+		1880A8031D4068E40042C09C /* CycleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleCollectionViewCell.m; sourceTree = "<group>"; };
 		1E391587F8961B6B8EC3D562 /* libPods-01-网易新闻架构搭建.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-01-网易新闻架构搭建.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0380CF4350EFAD1F4CCD90 /* Pods-01-网易新闻架构搭建.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01-网易新闻架构搭建.release.xcconfig"; path = "Pods/Target Support Files/Pods-01-网易新闻架构搭建/Pods-01-网易新闻架构搭建.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +104,7 @@
 		18144A7E1D3DB81B00CC8B73 /* 01-网易新闻架构搭建 */ = {
 			isa = PBXGroup;
 			children = (
+				1880A7F81D405C670042C09C /* Cycle */,
 				18144ABB1D3DDA0100CC8B73 /* Networktool */,
 				18144AB11D3DD87C00CC8B73 /* News */,
 				18144AA51D3DC7BF00CC8B73 /* Log */,
@@ -237,6 +247,43 @@
 				18144ABD1D3DDA2700CC8B73 /* NetworlTool.m */,
 			);
 			path = Networktool;
+			sourceTree = "<group>";
+		};
+		1880A7F81D405C670042C09C /* Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				1880A7F91D405C670042C09C /* model */,
+				1880A7FA1D405C670042C09C /* view */,
+				1880A7FB1D405C670042C09C /* viewController */,
+			);
+			path = Cycle;
+			sourceTree = "<group>";
+		};
+		1880A7F91D405C670042C09C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1880A7FF1D405DC20042C09C /* CycleModel.h */,
+				1880A8001D405DC20042C09C /* CycleModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1880A7FA1D405C670042C09C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1880A8021D4068E40042C09C /* CycleCollectionViewCell.h */,
+				1880A8031D4068E40042C09C /* CycleCollectionViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1880A7FB1D405C670042C09C /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				1880A7FC1D405C8A0042C09C /* CycleCollectionViewController.h */,
+				1880A7FD1D405C8A0042C09C /* CycleCollectionViewController.m */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 		74ABA97CD06EBA56D2A83494 /* Pods */ = {
@@ -385,10 +432,13 @@
 				18144A841D3DB81B00CC8B73 /* AppDelegate.m in Sources */,
 				18144A811D3DB81B00CC8B73 /* main.m in Sources */,
 				18144ABA1D3DD93F00CC8B73 /* NewsModel.m in Sources */,
+				1880A8011D405DC20042C09C /* CycleModel.m in Sources */,
 				18144ABE1D3DDA2700CC8B73 /* NetworlTool.m in Sources */,
 				18144AAD1D3DCA9A00CC8B73 /* channelLab.m in Sources */,
 				18144AB01D3DD58A00CC8B73 /* HomeCollectionViewCell.m in Sources */,
+				1880A8041D4068E40042C09C /* CycleCollectionViewCell.m in Sources */,
 				18144AC31D3E0FAC00CC8B73 /* NewsTableViewCell.m in Sources */,
+				1880A7FE1D405C8A0042C09C /* CycleCollectionViewController.m in Sources */,
 				18144AA11D3DBC1000CC8B73 /* HomeViewController.m in Sources */,
 				18144AA41D3DBEBF00CC8B73 /* ChannelModel.m in Sources */,
 			);

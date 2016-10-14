@@ -12,6 +12,14 @@ kvc和kvo都是运行时的方法,两者之间没有实质性的关系.
 kvc 指的是字典转模型.
 kvo 指的是观察者模式. 本质是通知的一种应用.
 
+### Runloop(运行循环)
+
+主线程里的runloop 是自动开启的
+子线程的runloop 需要手动开启
+
+
+
+
 ### IOS 开发中数据持久性有哪几种
 
 1.plist    2.偏好设置    3.归档    4.数据库/SQlite
@@ -99,6 +107,43 @@ XMPP 深入了解即时通信
 SDWebinage 用到多线程了 在子线程从网络下载图片,在主线程用imageView 显示图片
 
 1. 先看内存有没有.如果没有在看沙盒有没有. 沙盒没有就网络下载
+2. SDWebimage 对卡顿现象有一定优化 滑动的时候不下载,滑动结束在下载
 
+### 内存管理
+oc 在MRC情况下 用引用计数器retain release
+   在ARC情况下 是用 强引用 若引用 strong weak
+### 第三方登录 分享 
 
+使用 友盟SDK
 
+### 地图 
+
+百度 SDK
+
+### 项目中遇到的bug
+
+看面试宝典
+
+### 常见的Http 状态码有哪些?
+
+http状态吗 ：302 是请求重定向。500以上是服务器错误。400以上是请求链接错误或者找不到服务器。200以上是正确。100以上是请求接受成功。
+
+### Xcode 管理内存工具有几种
+1. 静态内存管理
+2. [instrument ](http://www.07net01.com/2015/11/1000712.html)
+
+### ios常见的加密方式
+
+1.base64 2.MD5
+
+### MVC 和MVVM的区别
+
+和网络有关的操作 单独分离出来放到ViewModel文件夹里
+model 文件夹指写字典转模型
+
+MVVM 
+ Model View ViewModel
+MVC
+model view controller
+
+### AFN 有空研究研究

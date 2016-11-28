@@ -169,6 +169,11 @@ model view controller
 
     注意：一定要先添加操作依赖，然后在执行操作（将操作添加到操作队列中）
 
+### UIImage两种加载方式
+    
+    1.根据图片名称加载图片 (assets.xcssets)效率高占用内存 会缓存图片
+    2.根据图片路径加载图片 (supporingfiles)效率低 占用内存小
+
 
 
 
